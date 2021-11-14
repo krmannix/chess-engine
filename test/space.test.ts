@@ -1,5 +1,5 @@
 import { BaseColor } from '../src/interface'
-import { Space } from '../src/board'
+import { Space } from '../src/space'
 
 describe('baseColor', () => {
   test('it returns black for A1', () => {
