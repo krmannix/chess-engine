@@ -1,3 +1,6 @@
-const hello = 'hi there'
+import { Board } from './board'
+import { drawBoard } from './draw'
 
-console.log(hello)
+const board = new Board()
+const rows = drawBoard(board)
+console.log(rows.join('\n'))
