@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "tsc"
+    "build": "npm run lint && tsc",
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
