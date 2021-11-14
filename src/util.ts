@@ -1,3 +1,5 @@
+import { ISpace } from './interface'
+
 export function fileToLetter(file: number): string {
   switch (file) {
     case 1: return 'A'
@@ -10,4 +12,18 @@ export function fileToLetter(file: number): string {
     case 8: return 'H'
     default: return 'X'
   }
+}
+
+export function twoDimensional(spaces: ISpace[]) {
+  const rankToSpaces: Record<number, ISpace[]> = {}
+
+  spaces.forEach(space => {
+    if (rankToSpaces[space.rank]) {
+      rankToSpaces[space.rank].push(space)
+    } else {
+      rankToSpaces[space.rank] = [space]
+    }
+  })
+
+  return Object.values(rankToSpaces)
 }
