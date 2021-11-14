@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "npm run lint && tsc",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
