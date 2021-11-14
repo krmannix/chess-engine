@@ -18,7 +18,7 @@ export class Space implements ISpace {
   }
 
   public get baseColor() {
-    return BaseColor.Black
+    return (this.rank + this.file) % 2 ? BaseColor.White : BaseColor.Black
   }
 
   public get human() {
