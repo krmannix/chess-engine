@@ -18,5 +18,8 @@
     "tsc": "^2.0.3",
     "typescript": "^4.4.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }
